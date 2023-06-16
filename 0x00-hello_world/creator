@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "input filename"
+read filename  
+
+touch ${filename}
+echo "input text inside the file"
+read infile 
+
+echo "#!/bin/bash
+${infile}" > ${filename}
+
+chmod +x ${filename}
+
