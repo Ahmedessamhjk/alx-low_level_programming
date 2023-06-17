@@ -1,25 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - Entry piont
+ * main - Prints numbers from 0 to 9.
  *
- * Description: print 0-9 using putchar
- *		while using int variable
- *
- * Return: 0 (Success)
-*/
-
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int digit = 0;
+	int i;
 
-	while (digit <= 9)
+	for (i = 48; i < 58; i++)
 	{
-		/*convert digits to ASCII representation*/
-		putchar(digit + '0');
-		digit++;
+		putchar(i);
 	}
-	putchr(\n);
-
+	putchar('\n');
 	return (0);
 }
