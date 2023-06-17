@@ -19,7 +19,7 @@ int main(void)
 		putchar(digit + '0');
 		digit++;
 	}
-	printf("\n");
+	putchr(\n);
 
 	return (0);
 }
