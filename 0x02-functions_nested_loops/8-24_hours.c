@@ -10,7 +10,7 @@ void jack_bauer(void)
 
 	for (hr = 0; hr <= 23; hr++)
 	{
-		for (main = 0; main <= 59; main++)
+		for (min = 0; min <= 59; min++)
 		{
 			_putchsar((hr / 10) + 48);
 			_putchsar((hr % 10) + 48);
