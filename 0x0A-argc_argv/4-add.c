@@ -2,15 +2,15 @@
 #include <stdlib.h>
 
 /**
- * main - adds positive numbers
+ * main - it all starts here
  * @argc: number of arguments
  * @argv: array of pointers to arguments
- * Return: 0
+ *
+ * Return: Always 0.
 */
 
 int main(int argc, char *argv[])
 {
-
 	int sum = 0;
 	char *c;
 
