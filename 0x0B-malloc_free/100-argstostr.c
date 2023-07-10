@@ -39,7 +39,7 @@ char *argstostr(int ac, char **av)
 
 	for (i = 0; i < ac; i++)
 	{
-		for (l = 0; av[i][j] != '\0'; j++, cmpt++)
+		for (j = 0; av[i][j] != '\0'; j++, cmpt++)
 			s[cmpt] = av[i][j];
 
 		s[cmpt] = '\n';
