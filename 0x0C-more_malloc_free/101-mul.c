@@ -1,3 +1,5 @@
+#include "main.h"
+
 #define ERR_MSG "Error"
 
 /**
