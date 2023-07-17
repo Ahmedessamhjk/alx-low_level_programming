@@ -8,5 +8,5 @@
 
 int main(void)
 {
-	printf("__file__\n")
+	printf("%s\n", __file__);
 }
