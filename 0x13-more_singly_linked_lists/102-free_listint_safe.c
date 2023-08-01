@@ -1,3 +1,4 @@
+
 #include "lists.h"
 
 /**
@@ -9,8 +10,8 @@
 size_t free_listint_safe(listint_t **h)
 {
 	size_t len = 0;
-	int a;
-	listint_t *new;
+	int diff;
+	listint_t *temp;
 
 	if (!h || !*h)
 		return (0);
@@ -18,11 +19,11 @@ size_t free_listint_safe(listint_t **h)
 	while (*h)
 	{
 		diff = *h - (*h)->next;
-		if (a > 0)
+		if (diff > 0)
 		{
-			new = (*h)->next;
+			temp = (*h)->next;
 			free(*h);
-			*h = new;
+			*h = temp;
 			len++;
 		}
 		else
