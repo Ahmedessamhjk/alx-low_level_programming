@@ -3,16 +3,18 @@
 /**
  * free_listint - frees a linked list
  * @head: listint_t list to be freed
+ *
+ * Return: void
 */
 void free_listint(listint_t *head)
 {
-	listint_t *num;
+	listint_t *node;
 
 	while (head)
 	{
-		num = head->next;
+		node = head;
+		head = head->next;
 		free(node);
-		head = num;
 	}
 }
 
