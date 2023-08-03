@@ -10,9 +10,9 @@ void print_binary(unsigned long int n)
 {
 	int a = sizeof(n) * 8, c = 0;
 
-	while (a)
+	while (a != 0)
 	{
-		 if (c & 1L << --a)
+		if (c & 1L << --a)
 		{
 			_putchar('1');
 			c++;
