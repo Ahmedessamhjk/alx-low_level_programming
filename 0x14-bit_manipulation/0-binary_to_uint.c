@@ -9,19 +9,21 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int sum = 0;
+	int a;
 
 	if (!b)
 	{
 		return (0);
 	}
 
-	while (*b)
+	for (a = 0; b[a]; a++)
 	{
-		if (*b != '0' && *b != '1')
+		if (b[a] < '0' || b[a] > '1')
 		{
 			return (0);
 		}
-		sum = sum * 2 + (*b++ - '0');
+		sum = sum * 2 + (b[a] - '0');
 	}
+
 	return (sum);
 }
