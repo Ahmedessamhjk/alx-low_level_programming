@@ -10,16 +10,13 @@ void print_binary(unsigned long int n)
 {
 	int a = sizeof(n) * 8, c = 0;
 
-	while (a != 0)
-	{
-		if (c & 1L << --a)
+		if (c & 1)
 		{
 			_putchar('1');
 			c++;
 		}
 		else if (c)
 			_putchar('0');
-	}
 	if (!c)
 		_putchar('0');
 }
